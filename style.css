@@ -1,0 +1,118 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', serif;
+    background-color: #DEEFDB;
+    background-image: 
+        linear-gradient(45deg, #B6E0DB 25%, transparent 25%),
+        linear-gradient(-45deg, #B6E0DB 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #C0EAE5 75%),
+        linear-gradient(-45deg, transparent 75%, #C0EAE5 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+header {
+    background-color: #303030;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo{
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    /*border: 1px solid red;*/
+}
+
+.logo-img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans', serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    transform: scale(1.1);
+}
+    
+section {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.slide {
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    max-width: 60%;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.slide-left {
+    transform: translateX(-100vw);
+}
+
+.slide-right {
+    transform: translateX(100vw);
+}
+
+.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.exit-left {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.exit-right {
+    transform: translateX(100vw);
+    opacity: 0;
+}
