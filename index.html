@@ -3,107 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Scroll Slide In/Out</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      height: 4000px; /* for scrolling */
-    }
-
-    section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .slide {
-      opacity: 0;
-      transform: translateX(0);
-      transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-      position: relative;
-      max-width: 60%;
-      padding: 2rem;
-      font-size: 2rem;
-      border: 2px solid #333;
-      border-radius: 10px;
-      background-color: #f0f0f0;
-    }
-
-    .from-left {
-      transform: translateX(-150%);
-    }
-
-    .from-right {
-      transform: translateX(150%);
-    }
-
-    .visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .hidden-left {
-      transform: translateX(-150%);
-      opacity: 0;
-    }
-
-    .hidden-right {
-      transform: translateX(150%);
-      opacity: 0;
-    }
-  </style>
+  <title>Scroll Slide In/Out (Pure Scroll)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-
+  <header>
+    <a href="index.html" class="logo">
+      <img src="assets/MAO_Blue.png" class="logo-img">
+      OTHS MAO
+    </a>
+    <div class="nav-buttons">
+      <button>Home</button>
+      <button>Calendar</button>
+      <button>Features</button>
+      <button>About</button>
+    </div>
+  </header>
   <section>
-    <div class="slide from-left">Slide In From Left</div>
+    <div class="slide slide-left">What am i doing</div>
+    <div class="slide slide-right">idek</div>
   </section>
 
   <section>
-    <div class="slide from-right">Slide In From Right</div>
+    <div class="slide slide-left">What am i doing</div>
+    <div class="slide slide-right">idek</div>
   </section>
 
-  <section>
-    <div class="slide from-left">Another Left Slider</div>
-  </section>
-
-  <script>
-    const elements = document.querySelectorAll('.slide');
-
-    function isInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top < window.innerHeight &&
-        rect.bottom > 0
-      );
-    }
-
-    function handleScroll() {
-      elements.forEach(el => {
-        if (isInViewport(el)) {
-          el.classList.add('visible');
-          el.classList.remove('hidden-left', 'hidden-right');
-        } else {
-          el.classList.remove('visible');
-          if (el.classList.contains('from-left')) {
-            el.classList.add('hidden-left');
-          } else if (el.classList.contains('from-right')) {
-            el.classList.add('hidden-right');
-          }
-        }
-      });
-    }
-
-    // Initial check
-    handleScroll();
-
-    // Scroll and resize listeners
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-  </script>
-
+  <script src="index.js"></script>
 </body>
 </html>
