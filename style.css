@@ -75,11 +75,26 @@ header {
 }
     
 section {
-    min-height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
+}
+
+div {
+    text-align: center;
+    margin: 5px;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.join-img{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    /*border: 1px solid red;*/
 }
 
 .slide {

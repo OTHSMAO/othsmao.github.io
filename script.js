@@ -2,7 +2,8 @@ const slides = document.querySelectorAll('.slide');
 
 function isInViewport(el) {
   const rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom > 0;
+  const buffer = 25;
+  return rect.top < window.innerHeight - buffer && rect.bottom > buffer;
 }
 
 function handleScroll() {
