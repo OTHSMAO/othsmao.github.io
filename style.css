@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body {
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -8,11 +11,6 @@ body {
     margin: 0;
     font-family: 'IBM Plex Sans', serif;
     background-color: #DEEFDB;
-    background-image: 
-        linear-gradient(45deg, #B6E0DB 25%, transparent 25%),
-        linear-gradient(-45deg, #B6E0DB 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #C0EAE5 75%),
-        linear-gradient(-45deg, transparent 75%, #C0EAE5 75%);
     background-size: 40px 40px;
     background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
@@ -24,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
 }
 
@@ -73,6 +72,53 @@ header {
 .nav-buttons button:hover {
     transform: scale(1.1);
 }
+
+/* Hide mobile nav icon on large screens */
+.mobile-menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile nav dropdown */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #303030;
+    position: absolute;
+    top: calc(100% - 5px);
+    right: -5px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-top: 1px solid #444;
+    font-size: 1rem;
+}
+
+.mobile-nav a:hover {
+    background-color: #444;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-nav.show {
+        display: flex;
+    }
+} 
     
 section {
     display: flex;
@@ -81,9 +127,18 @@ section {
     padding: 1.5rem;
 }
 
+.blue-section {
+    background-color: #B6E0DB;
+}
+
 div {
     text-align: center;
     margin: 5px;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p {
@@ -94,40 +149,24 @@ p {
     width: 100px;
     cursor: pointer;
     border-radius: 10px;
+    padding: 5px;
+    background-color: #FFFFFF;
     /*border: 1px solid red;*/
 }
 
-.slide {
-    opacity: 0;
-    transition: transform 0.8s ease, opacity 0.8s ease;
-    max-width: 60%;
-    padding: 2rem;
-    font-size: 2rem;
-    border: 2px solid #333;
+.person{
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 225px;
+    border-radius: 20px;
+}
+
+.person img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
     border-radius: 10px;
-    background-color: #ffffff;
-    position: relative;
-}
-
-.slide-left {
-    transform: translateX(-100vw);
-}
-
-.slide-right {
-    transform: translateX(100vw);
-}
-
-.visible {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.exit-left {
-    transform: translateX(-100vw);
-    opacity: 0;
-}
-
-.exit-right {
-    transform: translateX(100vw);
-    opacity: 0;
+    padding: 5px;
+    background-color: #FFFFFF;
+    /*border: 1px solid red;*/
 }

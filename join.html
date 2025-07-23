@@ -10,19 +10,33 @@
 <body>
   <header>
     <a href="index.html" class="logo">
-      <img src="assets/MAO_Blue.png" class="logo-img">
+      <img src="assets/MAO_Blue.png" class="logo-img" />
       OTHS MAO
     </a>
-    <div class="nav-buttons">
+  
+    <div class="nav-buttons desktop-nav">
       <a href="index.html"><button>Home</button></a>
       <a href="join.html"><button>Join</button></a>
       <a href="calendar.html"><button>Calendar</button></a>
       <a href="features.html"><button>Features</button></a>
+      <a href="gallery.html"><button>Gallery</button></a>
       <a href="about.html"><button>About</button></a>
     </div>
+  
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="join.html">Join</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+    </div>
   </header>
-  <section>
-    <div class="slide slide-left">
+  
+  <section class="blue-section">
+    <div>
       <h4>Join MAO!</h4>
       <p>Information will be given at the start of each year!</p>
       <p>Look for us at Fish Camp and other club advertisements!</p>
@@ -30,10 +44,8 @@
     </div>
   </section>
   <section>
-    <div class="slide slide-left">
+    <div>
         <h4>Join our Discord!</h4>
-    </div>
-    <div class="slide slide-right">
         <p>Our Discord is a public and safe for work server where you can have fun and talk about math! We encourage you to join even if you're not in MAO (because you will be soon, whether you like it or not :innocent:)!</p>
         <a href="https://discord.gg/SYTXCmgen2">
           <img src = "assets/Discord.jpg" class="join-img">
@@ -41,11 +53,9 @@
     </div>
   </section>
 
-  <section>
-    <div class="slide slide-left">
-        <h4>Join our Remind!</h4>
-    </div>
-    <div class="slide slide-right">
+  <section class="blue-section">
+    <div>
+        <h4>Join our Discord!</h4>
         <p>Remind is our most serious of the three social medias and is the best place to get announcements about club events and competitions!</p>
         <img src = "assets/Remind.png" class="join-img">
         <p>Class of 2029</p>
@@ -56,10 +66,8 @@
   </section>
 
   <section>
-    <div class="slide slide-left">
+    <div>
         <h4>Follow us on Instagram!</h4>
-    </div>
-    <div class="slide slide-right">
         <p>I don't know hell about Instagram someone pls help :broken-heart: also while ur reading ts what is a thirst trap</p>
         <a href="https://discord.gg/SYTXCmgen2">
           <img src = "assets/Instagram.png" class="join-img">

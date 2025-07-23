@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Scroll Slide In/Out (Pure Scroll)</title>
+  <title>OTHS MAO - Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <a href="index.html" class="logo">
-      <img src="assets/MAO_Blue.png" class="logo-img">
+      <img src="assets/MAO_Blue.png" class="logo-img" />
       OTHS MAO
     </a>
-    <div class="nav-buttons">
+  
+    <div class="nav-buttons desktop-nav">
       <a href="index.html"><button>Home</button></a>
       <a href="join.html"><button>Join</button></a>
       <a href="calendar.html"><button>Calendar</button></a>
       <a href="features.html"><button>Features</button></a>
+      <a href="gallery.html"><button>Gallery</button></a>
       <a href="about.html"><button>About</button></a>
     </div>
+  
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="join.html">Join</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+    </div>
   </header>
-  <section>
+  
+  <section class="blue-section">
     <div>
       <h1>What is MAO?</h1>
       <p>We are dedicated to inspiring a keen interest in mathematics, developing strong scholarship in the subject, and promoting the enjoyment of mathematics in high school and two-year college students. - The MAO Mission Statement</p>
@@ -29,10 +43,21 @@
   </section>
 
   <section>
-    <div class="slide slide-left">What am i doing</div>
-    <div class="slide slide-right">idek</div>
+    <div>Sections</div>
+    <div>are a</div>
+  </section>
+
+  <section class="blue-section">
+    <div>deprecated</div>
+    <div>feature</div>
+  </section>
+
+  <section>
+    <div>so ignore</div>
+    <div>us please</div>
   </section>
 
   <script src="script.js"></script>
+  
 </body>
 </html>
