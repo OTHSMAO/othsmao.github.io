@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body {
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: #DEEFDB;
     background-size: 40px 40px;
     background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
@@ -60,12 +59,13 @@ header {
     background-color: white;
     color: black;
     border: none;
+    margin: 0;
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     font-family: 'IBM Plex Sans', serif;
     border-radius: 20px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .mobile-menu-icon {
@@ -94,6 +94,7 @@ header {
     text-decoration: none;
     border-top: 1px solid #444;
     font-size: 1rem;
+    width: 100vw;
 }
 
 .mobile-nav a:hover {
@@ -120,9 +121,28 @@ section {
     overflow-x: hidden;
 }
 
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .blue-section {
     background-color: #B6E0DB;
+}
+
+.calendar-section iframe {
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    border: none;
+}
+
+.calendar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem 1rem;
 }
 
@@ -130,8 +150,6 @@ div {
     text-align: center;
     margin: 0;
     font-size: 2rem;
-    padding: 30px;
-    /*border: 1px solid red;*/
 }
 
 h4 {
@@ -150,7 +168,32 @@ p {
     border: 2px solid #CCC;
     padding: 5px;
     background-color: #FFFFFF;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.remind-button {
+    background-color: #0364C0;
+    border: 2px solid #02488a;
+    border-radius: 20px;
+    width: 175px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border 0.3s ease, transform 0.2s ease;
+}
+
+.remind-button a {
+    text-decoration: none;
+    color: white;
+}
+  
+.remind-button:hover {
+    background-color: #3394F0;
+    border: 2px solid #3278Ba;
+    transform: scale(1.05);
 }
 
 .info-grid {
@@ -189,7 +232,7 @@ p {
     padding: 0;
 }
 
-.person-card p {
+.person-card p, .contact-card p {
     font-size: 1rem;
     margin: 10px;
     padding: 0;
@@ -210,7 +253,7 @@ p {
     margin-top: 25px;
     object-fit: cover;
     border: 3px solid #DDD;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 *, *::before, *::after {
@@ -218,6 +261,6 @@ p {
 }
 
 * {
+    font-family: 'Poppins', sans-serif;
     /*outline: 1px solid red;*/
 }
-  
