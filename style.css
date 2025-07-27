@@ -62,7 +62,6 @@ header {
     margin: 0;
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
-    font-family: 'IBM Plex Sans', serif;
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -101,7 +100,8 @@ header {
     background-color: #444;
 }
 
-@media (max-width: 768px) {
+/* Make sure to increase this for each button added */
+@media (max-width: 825px) {
     .desktop-nav {
         display: none;
     }
@@ -134,8 +134,8 @@ section {
 .calendar-section iframe {
     padding: 20px;
     width: 100%;
-    max-width: 1000px;
-    height: 600px;
+    max-width: 2000px;
+    height: 60vh;
     border: none;
 }
 
@@ -191,6 +191,7 @@ p {
 }
   
 .remind-button:hover {
+    cursor: pointer;
     background-color: #3394F0;
     border: 2px solid #3278Ba;
     transform: scale(1.05);
@@ -247,6 +248,7 @@ p {
 }
 
 .contact-card img {
+    cursor: pointer;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -255,6 +257,80 @@ p {
     border: 3px solid #DDD;
     transition: transform 0.2s ease;
 }
+
+.site-footer {
+    background-color: #303030;
+    color: #555;
+    padding: 1rem;
+    border-top: 3px solid #555;
+}
+  
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+.footer-section {
+    flex: 1 1 300px;
+}
+  
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer-section ul li {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+  
+.footer-section a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+  
+.footer-section a:hover {
+    color: #4FADE5;
+}
+
+.social-icons a img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: grayscale(70%);
+    transition: transform 0.2s ease;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    filter: grayscale(50%);
+}
+  
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+}
+  
 
 *, *::before, *::after {
     box-sizing: border-box;
