@@ -346,7 +346,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
-    justify-content: center; /* <– This centers the last row */
+    justify-content: center;
   }
   
   
