@@ -19,6 +19,7 @@ body {
 }
 
 header {
+    z-index: 10;
     background-color: #303030;
     color: white;
     padding: 1rem 2rem;
@@ -139,7 +140,24 @@ section {
 
 .blue-section {
     background-color: #B6E0DB;
+    z-index: -2;
 }
+
+.triangles {
+    position: relative;
+    padding: 5rem 2rem;
+    overflow: hidden;
+}
+  
+.cornerTriangle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    opacity: 0.5;
+    z-index: -1;
+}  
 
 .calendar-section iframe {
     padding: 20px;
@@ -168,6 +186,7 @@ h4 {
 }
 
 p {
+    z-index: 1;
     font-size: 1.25rem;
 }
 
@@ -221,7 +240,7 @@ p {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 20px;
-    box-shadow: 0 0px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 20px rgba(0,0,0,0.5);
     padding: 1rem;
     text-align: center;
     min-height: 400px;
@@ -231,7 +250,7 @@ p {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 20px;
-    box-shadow: 0 0px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 20px rgba(0,0,0,0.5);
     padding: 1rem;
     text-align: center;
     min-height: 300px;
@@ -379,4 +398,3 @@ p {
     font-family: 'Poppins', sans-serif;
     /*outline: 1px solid red;*/
 }
-
