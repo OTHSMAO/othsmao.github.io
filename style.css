@@ -261,7 +261,7 @@ p {
 .site-footer {
     background-color: #303030;
     color: #555;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-top: 3px solid #555;
 }
   
@@ -277,10 +277,10 @@ p {
 .footer-section {
     flex: 1 1 300px;
 }
-  
+
 .footer-section h4 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border-bottom: 2px solid #555;
     display: inline-block;
     padding-bottom: 0.5rem;
@@ -293,8 +293,8 @@ p {
 }
   
 .footer-section ul li {
-    margin: 0.5rem 0;
-    font-size: 1.5rem;
+    margin: 0.25rem 0;
+    font-size: 1rem;
 }
   
 .footer-section a {
@@ -307,10 +307,21 @@ p {
     color: #4FADE5;
 }
 
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-icons a {
+    display: flex;
+}
+
 .social-icons a img {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
     filter: grayscale(70%);
     transition: transform 0.2s ease;
@@ -325,18 +336,38 @@ p {
   
 .footer-bottom {
     text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
     border-top: 1px solid #555;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+}
+
+.quick-link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-content: center; /* <– This centers the last row */
+  }
+  
+  
+.quick-link-grid a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+  
 * {
     font-family: 'Poppins', sans-serif;
     /*outline: 1px solid red;*/
 }
+
