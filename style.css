@@ -372,7 +372,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
     justify-content: center;
-  }
+}
   
   
 .quick-link-grid a {
@@ -384,6 +384,1968 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Features Page Specific Styles - Add these to your existing style.css */
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 70vh;
+    min-height: 500px;
+    margin: 2rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+.iframe-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #B6E0DB;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-card h5 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #303030;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.competition-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+}
+
+.competition-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.competition-item:hover {
+    transform: translateY(-3px);
+}
+
+.competition-item h5 {
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.competition-item p {
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness for Features */
+@media (max-width: 768px) {
+    .iframe-container {
+        height: 60vh;
+        min-height: 400px;
+        margin: 1rem 0;
+    }
+    
+    .feature-card {
+        min-height: 250px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+    
+    .competition-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .features-section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .iframe-container {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .feature-card h5 {
+        font-size: 1.2rem;
+    }
+    
+    .competition-item h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Homepage Specific Styles - Add these to your existing style.css */
+
+/* Active navigation state */
+.nav-buttons button.active {
+    background-color: #B6E0DB;
+    color: #303030;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #B6E0DB 0%, #A8D5D1 100%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #303030;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 0 0 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* CTA Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.cta-button.primary {
+    background-color: #303030;
+    color: white;
+    border-color: #303030;
+}
+
+.cta-button.primary:hover {
+    background-color: #444;
+    border-color: #444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #303030;
+    border-color: #303030;
+}
+
+.cta-button.secondary:hover {
+    background-color: #303030;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+    color: #303030;
+}
+
+.mission-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    line-height: 1.7;
+    padding: 2rem;
+    background: rgba(182, 224, 219, 0.3);
+    border-radius: 15px;
+    border-left: 5px solid #B6E0DB;
+}
+
+.mission-attribution {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.stats-container h2 {
+    font-size: 2.5rem;
+    margin: 0 0 3rem 0;
+    color: #303030;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Offerings Section */
+.offerings-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.offerings-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 3rem 0;
+    color: #303030;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offering-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.offering-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.offering-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.offering-card h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.offering-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.learn-more {
+    color: #B6E0DB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #303030;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.quick-links-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 3rem 0;
+    color: #303030;
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quick-link-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    color: inherit;
+}
+
+.quick-link-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.quick-link-card h4 {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+    color: #303030;
+}
+
+.quick-link-card p {
+    color: #666;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .offerings-grid,
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mission-quote {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-section,
+    .mission-section,
+    .stats-section,
+    .offerings-section,
+    .cta-section,
+    .quick-links-section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Benefits Page Specific Styles - Add these to your existing style.css */
+
+/* Benefits Hero Section */
+.benefits-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.benefits-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.benefits-hero .hero-subtitle {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 0 0 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefits-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.preview-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #303030;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Benefit Sections */
+.benefit-section {
+    padding: 4rem 2rem;
+}
+
+.benefit-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.benefit-title h2 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    color: #303030;
+}
+
+.benefit-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+    font-style: italic;
+}
+
+.benefit-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card.highlight {
+    border-color: #B6E0DB;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.benefit-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.testimonials-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 3rem 0;
+    color: #303030;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card::before {
+    content: '"';
+    font-size: 4rem;
+    color: #B6E0DB;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-quote {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 2rem 0 1.5rem 0;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #303030;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+/* Benefits CTA Section */
+.benefits-cta {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.benefits-cta h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.benefits-cta p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.cta-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.cta-stat {
+    text-align: center;
+}
+
+.cta-stat .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 0.5rem;
+}
+
+.cta-stat .stat-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness for Benefits */
+@media (max-width: 768px) {
+    .benefits-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .benefit-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .benefit-title h2 {
+        font-size: 2rem;
+    }
+    
+    .benefit-icon {
+        font-size: 3rem;
+    }
+    
+    .benefit-details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cta-stats {
+        gap: 2rem;
+    }
+    
+    .preview-item {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .benefit-title h2 {
+        font-size: 1.7rem;
+    }
+    
+    .benefits-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-section {
+        padding: 3rem 1rem;
+    }
+    
+    .testimonials-section {
+        padding: 3rem 1rem;
+    }
+    
+    .benefits-cta {
+        padding: 3rem 1rem;
+    }
+    
+    .cta-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .preview-item {
+        font-size: 0.8rem;
+    }
+}
+
+/* Calendar Page Specific Styles - Add these to your existing style.css */
+
+/* Calendar Hero Section */
+.calendar-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.calendar-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.calendar-hero .hero-subtitle {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 0 0 2rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.calendar-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-badge {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #303030;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Calendar Section */
+.main-calendar-section {
+    padding: 4rem 2rem;
+}
+
+.calendar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.calendar-header h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.calendar-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.calendar-wrapper {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+}
+
+.calendar-wrapper iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+}
+
+.calendar-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Event Types Section */
+.event-types-section {
+    padding: 4rem 2rem;
+}
+
+.event-types-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.event-types-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.event-types-content > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0 0 3rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.event-type-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.event-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.event-type-card h3 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.event-type-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+.event-frequency {
+    background: #B6E0DB;
+    color: #303030;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Important Dates Section */
+.important-dates-section {
+    padding: 4rem 2rem;
+}
+
+.important-dates-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.important-dates-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 3rem 0;
+    color: #303030;
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.date-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.date-card:hover {
+    transform: translateY(-3px);
+}
+
+.date-month {
+    background: linear-gradient(135deg, #B6E0DB 0%, #A8D5D1 100%);
+    color: #303030;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    min-width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.date-details h4 {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+    color: #303030;
+}
+
+.date-details p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Stay Updated Section */
+.stay-updated-section {
+    padding: 4rem 2rem;
+}
+
+.stay-updated-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stay-updated-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.stay-updated-content > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0 0 3rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.update-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.update-method {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.update-method:hover {
+    transform: translateY(-5px);
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.update-method h3 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.update-method p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+.method-button {
+    display: inline-block;
+    background: #303030;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.method-button:hover {
+    background: #444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar CTA Section */
+.calendar-cta {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.calendar-cta h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #303030;
+}
+
+.calendar-cta p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness for Calendar */
+@media (max-width: 768px) {
+    .calendar-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .calendar-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .feature-badge {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .calendar-wrapper {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .calendar-wrapper iframe {
+        height: 500px;
+    }
+    
+    .event-types-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .dates-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .date-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .update-methods {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .calendar-wrapper iframe {
+        height: 400px;
+    }
+    
+    .event-type-card,
+    .update-method {
+        padding: 1.5rem 1rem;
+    }
+    
+    .main-calendar-section,
+    .event-types-section,
+    .important-dates-section,
+    .stay-updated-section,
+    .calendar-cta {
+        padding: 3rem 1rem;
+    }
+    
+    .date-month {
+        min-width: 50px;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Add these CSS rules to your existing style.css file */
+
+/* Enhanced join section styling */
+.join-section-enhanced {
+    position: relative;
+    overflow: hidden;
+}
+
+.join-section-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Enhanced join images with better hover effects */
+.join-img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid #B6E0DB;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    margin: 1.5rem auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.join-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(182, 224, 219, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.join-img:hover::before {
+    left: 100%;
+}
+
+.join-img:hover {
+    transform: scale(1.15) rotate(3deg);
+    border-color: #A8D5D1;
+    box-shadow: 0 12px 40px rgba(182, 224, 219, 0.4);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Enhanced remind buttons */
+.remind-button {
+    background: linear-gradient(135deg, #0364C0 0%, #0278D4 50%, #0364C0 100%);
+    background-size: 200% 200%;
+    border: 2px solid #02488a;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(3, 100, 192, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.remind-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.remind-button:hover::before {
+    left: 100%;
+}
+
+.remind-button:hover {
+    background: linear-gradient(135deg, #3394F0 0%, #4DA6F2 50%, #3394F0 100%);
+    background-position: right center;
+    border-color: #3278Ba;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(3, 100, 192, 0.4);
+}
+
+.remind-button:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* Enhanced section spacing and typography */
+.join-page-section {
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.join-page-section h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.join-page-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #B6E0DB, #A8D5D1);
+    border-radius: 2px;
+}
+
+.join-page-section p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Discord section specific styling */
+.discord-section {
+    background: linear-gradient(135deg, #DEEFDB 0%, #C8E6C9 100%);
+    position: relative;
+}
+
+.discord-section::before {
+    content: '💬';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    opacity: 0.1;
+    animation: bounce 2s infinite;
+}
+
+/* Instagram section specific styling */
+.instagram-section {
+    position: relative;
+}
+
+.instagram-section::before {
+    content: '📸';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    opacity: 0.1;
+    animation: pulse 2s infinite;
+}
+
+/* Remind section grid layout */
+.remind-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Floating animation for decorative elements */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+}
+
+/* Enhanced link styling */
+.join-page-section a {
+    transition: all 0.3s ease;
+}
+
+.join-page-section a:hover {
+    filter: brightness(1.1);
+}
+
+/* Responsive improvements for join page */
+@media (max-width: 768px) {
+    .join-page-section {
+        padding: 3rem 1rem;
+    }
+    
+    .join-page-section h4 {
+        font-size: 2rem;
+    }
+    
+    .join-page-section p {
+        font-size: 1.1rem;
+    }
+    
+    .join-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .remind-button {
+        width: 180px;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .remind-buttons-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Add these CSS rules to your existing style.css file for about page enhancements */
+
+/* Enhanced about section styling */
+.about-section-enhanced {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="about-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="rgba(255,255,255,0.08)"/><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23about-pattern)"/></svg>');
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Enhanced page section styling */
+.about-page-section {
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.about-page-section h4 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.about-page-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #B6E0DB, #A8D5D1);
+    border-radius: 2px;
+}
+
+/* Officers section specific styling */
+.officers-intro {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #2c5530;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.officers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Enhanced officer cards */
+.officer-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.officer-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #B6E0DB, #A8D5D1, #9FD3CE);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.officer-card:hover::before {
+    opacity: 1;
+}
+
+.officer-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    border-color: rgba(182, 224, 219, 0.4);
+}
+
+.officer-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #B6E0DB;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+    margin-bottom: 1.5rem;
+}
+
+.officer-card:hover img {
+    border-color: #A8D5D1;
+    transform: scale(1.08);
+    box-shadow: 0 10px 35px rgba(182, 224, 219, 0.4);
+}
+
+.officer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.officer-info h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #303030;
+}
+
+.officer-info h4::after {
+    display: none;
+}
+
+.officer-position {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #B6E0DB;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.officer-bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    flex: 1;
+}
+
+/* Enhanced contact section */
+.contact-section-enhanced {
+    background: linear-gradient(135deg, #DEEFDB 0%, #C8E6C9 100%);
+    position: relative;
+}
+
+.contact-section-enhanced::before {
+    content: '✉️';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 4rem;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.contact-intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Enhanced contact cards */
+.enhanced-contact-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.enhanced-contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #B6E0DB, #A8D5D1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.enhanced-contact-card:hover::before {
+    opacity: 1;
+}
+
+.enhanced-contact-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    border-color: rgba(182, 224, 219, 0.3);
+}
+
+.contact-icon-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon-wrapper h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #303030;
+}
+
+.contact-icon-wrapper h4::after {
+    display: none;
+}
+
+.contact-link {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.enhanced-contact-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid #B6E0DB;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-contact-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+    border-color: #A8D5D1;
+    box-shadow: 0 8px 30px rgba(182, 224, 219, 0.4);
+}
+
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-address {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 0.8rem;
+}
+
+.contact-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* Additional contact info section */
+.additional-contact-info {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-contact-info h5 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #303030;
+}
+
+.additional-contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+.inline-link {
+    color: #0364C0;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+    color: #3394F0;
+    border-bottom-color: #3394F0;
+    transform: translateY(-1px);
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-15px) rotate(5deg); 
+    }
+}
+
+/* Responsive improvements for about page */
+@media (max-width: 768px) {
+    .about-page-section {
+        padding: 3rem 1rem;
+    }
+    
+    .about-page-section h4 {
+        font-size: 2.2rem;
+    }
+    
+    .officers-intro, .contact-intro {
+        font-size: 1.2rem;
+    }
+    
+    .officers-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .officer-card {
+        min-height: 420px;
+        padding: 2rem 1.5rem;
+    }
+    
+    .officer-card img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .enhanced-contact-card {
+        min-height: 280px;
+        padding: 2rem 1.5rem;
+    }
+    
+    .additional-contact-info {
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page-section h4 {
+        font-size: 1.9rem;
+    }
+    
+    .officers-intro, .contact-intro {
+        font-size: 1.1rem;
+    }
+    
+    .officer-card {
+        min-height: 380px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .officer-card img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .enhanced-contact-card {
+        min-height: 260px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .enhanced-contact-card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .additional-contact-info {
+        padding: 1.5rem;
+    }
+    
+    .additional-contact-info h5 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .join-page-section h4 {
+        font-size: 1.8rem;
+    }
+    
+    .join-img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .remind-button {
+        width: 160px;
+        font-size: 0.95rem;
+    }
 }
 
 *, *::before, *::after {

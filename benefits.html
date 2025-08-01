@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>OTHS MAO - About</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>OTHS MAO - Benefits</title>
+    <meta name="description" content="Discover the amazing benefits of joining OTHS Mu Alpha Theta - from sharpening math skills to college prep, community building, and fun events with food!">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="assets/MAO_Blue.png" class="logo-img" />
+        <img src="assets/MAO_Blue.png" class="logo-img" alt="MAO Logo" />
         OTHS MAO
       </a>
     
       <div class="nav-buttons desktop-nav">
         <a href="index.html"><button>Home</button></a>
-        <a href="benefits.html"><button>Benefits</button></a>
+        <a href="benefits.html"><button class="active">Benefits</button></a>
         <a href="join.html"><button>Join</button></a>
         <a href="calendar.html"><button>Calendar</button></a>
         <a href="features.html"><button>Features</button></a>
         <a href="about.html"><button>About</button></a>
       </div>
     
-      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
 
       <div class="mobile-nav" id="mobileMenu">
         <a href="index.html">Home</a>
@@ -36,33 +37,176 @@
     </header>
     
     <main>
-      <section class="blue-section triangles">
-        <h4>Why should I join MAO?</h4>
-        <p>Here are some reasons you should be part of our fabulous club!</p>
+      <!-- Hero Section -->
+      <section class="benefits-hero blue-section triangles">
+        <div class="hero-content">
+          <h1>Why Join MAO?</h1>
+          <p class="hero-subtitle">Discover the incredible benefits of being part of our fabulous math community!</p>
+          <div class="benefits-preview">
+            <div class="preview-item">🧠 Academic Excellence</div>
+            <div class="preview-item">🎓 College Preparation</div>
+            <div class="preview-item">👥 Amazing Community</div>
+            <div class="preview-item">🎉 Fun Events</div>
+          </div>
+        </div>
       </section>
 
-      <section class="triangles">
-        <h4>Sharpen your math skills!</h4>
-        <p>Whether you seek help in your academic studies or want to prepare for competitions, MAO offers lessons to help cultivate everyone's skills!</p>
-        <p>We host various competitions including the AMC, A&M Contest, U of H contest, and even our homemade TMC contest to challenge all skill levels in a variety of subjects!</p>
+      <!-- Academic Benefits -->
+      <section class="benefit-section triangles">
+        <div class="benefit-content">
+          <div class="benefit-header">
+            <div class="benefit-icon">🧠</div>
+            <div class="benefit-title">
+              <h2>Sharpen Your Math Skills</h2>
+              <p class="benefit-subtitle">Excel in academics and competitions</p>
+            </div>
+          </div>
+          
+          <div class="benefit-details">
+            <div class="benefit-card">
+              <h3>📚 Academic Support</h3>
+              <p>Whether you seek help in your academic studies or want to prepare for competitions, MAO offers personalized lessons to help cultivate everyone's mathematical abilities!</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>🏆 Competition Training</h3>
+              <p>We host various competitions including the AMC, A&M Contest, U of H contest, and even our homemade TMC contest to challenge all skill levels in a variety of subjects!</p>
+            </div>
+            
+            <div class="benefit-card highlight">
+              <h3>✨ For All Levels</h3>
+              <p>From beginners to advanced mathematicians, our diverse range of activities ensures everyone can grow and learn at their own pace.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="blue-section triangles">
-        <h4>Stand out for college!</h4>
-        <p>Show your initiative and academic excellence through participating in an honor society recognized by top colleges!</p>
-        <p>Leadership and awards in MAO can bolster your chances at colleges and camps!</p>
+      <!-- College Prep -->
+      <section class="benefit-section blue-section triangles">
+        <div class="benefit-content">
+          <div class="benefit-header">
+            <div class="benefit-icon">🎓</div>
+            <div class="benefit-title">
+              <h2>Stand Out for College</h2>
+              <p class="benefit-subtitle">Boost your college applications and future opportunities</p>
+            </div>
+          </div>
+          
+          <div class="benefit-details">
+            <div class="benefit-card">
+              <h3>🌟 Honor Society Recognition</h3>
+              <p>Show your initiative and academic excellence through participating in an honor society recognized by top colleges nationwide!</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>🏅 Leadership Opportunities</h3>
+              <p>Leadership positions and awards in MAO can significantly bolster your chances at competitive colleges and specialized math camps!</p>
+            </div>
+            
+            <div class="benefit-card highlight">
+              <h3>📈 Academic Distinction</h3>
+              <p>MAO membership demonstrates sustained commitment to mathematical excellence - exactly what admissions officers look for.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="triangles">
-        <h4>Join a motivated community!</h4>
-        <p>Meet other students who love math as much as you do!</p>
-        <p>Our Discord is filled with stimulating discussions that will improve your math skills and make you laugh!</p>
+      <!-- Community -->
+      <section class="benefit-section triangles">
+        <div class="benefit-content">
+          <div class="benefit-header">
+            <div class="benefit-icon">👥</div>
+            <div class="benefit-title">
+              <h2>Join a Motivated Community</h2>
+              <p class="benefit-subtitle">Connect with like-minded math enthusiasts</p>
+            </div>
+          </div>
+          
+          <div class="benefit-details">
+            <div class="benefit-card">
+              <h3>🤝 Meet Fellow Math Lovers</h3>
+              <p>Connect with other students who share your passion for mathematics and problem-solving. Build friendships that last beyond high school!</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>💬 Active Discord Community</h3>
+              <p>Our Discord server is filled with stimulating mathematical discussions, homework help, and plenty of fun that will improve your skills and make you laugh!</p>
+            </div>
+            
+            <div class="benefit-card highlight">
+              <h3>🧩 Collaborative Learning</h3>
+              <p>Work together on challenging problems, share study strategies, and learn from peers who inspire you to reach new heights.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="blue-section triangles">
-        <h4>Participate in fun events... with food!</h4>
-        <p>Join math games, team challenges, Pi Day parties, and more celebrating your favorite days with fun group activities!</p>
-        <p>We have free food like cookies, soda, and pizza for members, as well as additional prizes for our activity winners!</p>
+      <!-- Fun Events -->
+      <section class="benefit-section blue-section triangles">
+        <div class="benefit-content">
+          <div class="benefit-header">
+            <div class="benefit-icon">🎉</div>
+            <div class="benefit-title">
+              <h2>Participate in Fun Events... with Food!</h2>
+              <p class="benefit-subtitle">Learning doesn't have to be boring</p>
+            </div>
+          </div>
+          
+          <div class="benefit-details">
+            <div class="benefit-card">
+              <h3>🎮 Engaging Activities</h3>
+              <p>Join math games, team challenges, Pi Day parties, and more celebrating your favorite subject with fun group activities that bring learning to life!</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>🍕 Free Food & Prizes</h3>
+              <p>We provide free food like cookies, soda, and pizza for members, as well as additional prizes for our activity winners. Who says math can't be delicious?</p>
+            </div>
+            
+            <div class="benefit-card highlight">
+              <h3>🎊 Special Celebrations</h3>
+              <p>From Halloween to Christmas to Pi Day, we make sure to celebrate them with math and style!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Success Stories -->
+      <!--
+      <section class="testimonials-section triangles">
+        <div class="testimonials-content">
+          <h2>What Our Members Say</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"MAO helped me discover my love for advanced mathematics and gave me the confidence to pursue a STEM major in college!"</div>
+              <div class="testimonial-author">- Class of 2023 Graduate</div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"The community here is amazing. I've made lifelong friends and learned so much from both the officers and fellow members."</div>
+              <div class="testimonial-author">- Current Senior Member</div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"From struggling with algebra to competing in national contests - MAO transformed my relationship with math completely!"</div>
+              <div class="testimonial-author">- Junior Member</div>
+            </div>
+          </div>
+        </div>
+      </section>
+       -->
+
+      <!-- Call to Action -->
+      <section class="benefits-cta blue-section triangles">
+        <div class="cta-content">
+          <h2>Ready to Experience These Benefits?</h2>
+          <p>Join hundreds of students who have already discovered the joy of mathematical excellence through MAO!</p>
+          <div class="cta-buttons">
+            <a href="join.html" class="cta-button primary large">Join MAO Today</a>
+            <a href="about.html" class="cta-button secondary large">Meet Our Team</a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -71,16 +215,16 @@
         <div class="footer-section">
           <h4>Contact</h4>
           <div class="social-icons">
-            <a href="othsmao@gmail.com" target="_blank">
-              <img src="assets/Gmail.png" alt="Instagram"/>
+            <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
+              <img src="assets/Gmail.png" alt="Email"/>
             </a>
-            <a href="https://www.instagram.com/othsmao/" target="_blank">
+            <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
               <img src="assets/Instagram.png" alt="Instagram"/>
             </a>
-            <a href="https://www.remind.com/join/othsmao-29" target="_blank">
+            <a href="https://www.remind.com/join/othsmao-29" target="_blank" aria-label="Join our Remind">
               <img src="assets/Remind.png" alt="Remind" />
             </a>
-            <a href="https://discord.gg/SYTXCmgen2" target="_blank">
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
               <img src="assets/Discord.jpg" alt="Discord" />
             </a>
           </div>
@@ -99,7 +243,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 OTHS MAO. All rights reserved.</p>
+        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
       </div>
     </footer>
 

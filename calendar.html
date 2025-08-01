@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>OTHS MAO - Calendar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="description" content="Stay up-to-date with OTHS Mu Alpha Theta events, meetings, competitions, and activities. Never miss a math opportunity!">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="assets/MAO_Blue.png" class="logo-img" />
+        <img src="assets/MAO_Blue.png" class="logo-img" alt="MAO Logo" />
         OTHS MAO
       </a>
     
@@ -18,12 +19,12 @@
         <a href="index.html"><button>Home</button></a>
         <a href="benefits.html"><button>Benefits</button></a>
         <a href="join.html"><button>Join</button></a>
-        <a href="calendar.html"><button>Calendar</button></a>
+        <a href="calendar.html"><button class="active">Calendar</button></a>
         <a href="features.html"><button>Features</button></a>
         <a href="about.html"><button>About</button></a>
       </div>
     
-      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
 
       <div class="mobile-nav" id="mobileMenu">
         <a href="index.html">Home</a>
@@ -36,16 +37,187 @@
     </header>
 
     <main>
-      <section class="blue-section calendar-section triangles">
-        <h4>Upcoming Events</h4>
-        <iframe 
-          src="https://teamup.com/kskupjjfd1punv4zr2"
-          style="border: 0"
-          width="100%"
-          height="600"
-          frameborder="0"
-          scrolling="no">
-        </iframe>
+      <!-- Hero Section -->
+      <section class="calendar-hero blue-section triangles">
+        <div class="hero-content">
+          <h1>MAO Event Calendar</h1>
+          <p class="hero-subtitle">Stay connected with all our meetings, competitions, and fun activities throughout the year!</p>
+          <div class="calendar-features">
+            <div class="feature-badge">📅 Weekly Meetings</div>
+            <div class="feature-badge">🏆 Competitions</div>
+            <div class="feature-badge">🎉 Special Events</div>
+            <div class="feature-badge">📚 Study Sessions</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calendar Section -->
+      <section class="main-calendar-section triangles">
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <h2>Upcoming Events</h2>
+            <p>Click on any event for more details. All times are in Central Time.</p>
+          </div>
+          
+          <div class="calendar-wrapper">
+            <div class="calendar-loading">
+              <div class="loading-spinner"></div>
+              <p>Loading calendar...</p>
+            </div>
+            <iframe 
+              src="https://teamup.com/kskupjjfd1punv4zr2"
+              title="MAO Event Calendar"
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Types -->
+      <section class="event-types-section blue-section triangles">
+        <div class="event-types-content">
+          <h2>Types of Events</h2>
+          <p>Here's what you can expect to see on our calendar throughout the year:</p>
+          
+          <div class="event-types-grid">
+            <div class="event-type-card">
+              <div class="event-icon">📚</div>
+              <h3>Regular Meetings</h3>
+              <p>Weekly gatherings for lessons, problem-solving sessions, and club announcements. Perfect for staying connected with the community.</p>
+              <div class="event-frequency">Monthly</div>
+            </div>
+
+            <div class="event-type-card">
+              <div class="event-icon">🏆</div>
+              <h3>Math Competitions</h3>
+              <p>AMC, A&M Contest, U of H contest, and our signature TMC contest. Test your skills against other mathematical minds!</p>
+              <div class="event-frequency">Seasonal</div>
+            </div>
+
+            <div class="event-type-card">
+              <div class="event-icon">🎓</div>
+              <h3>Study Sessions</h3>
+              <p>Focused preparation for competitions, help with coursework, and collaborative problem-solving workshops.</p>
+              <div class="event-frequency">Weekly</div>
+            </div>
+
+            <div class="event-type-card">
+              <div class="event-icon">🎉</div>
+              <h3>Special Events</h3>
+              <p>Pi Day celebrations, math games, team challenges, and end-of-year parties. Learning can be fun!</p>
+              <div class="event-frequency">Seasonal</div>
+            </div>
+
+            <div class="event-type-card">
+              <div class="event-icon">🏅</div>
+              <h3>Awards Ceremonies</h3>
+              <p>Recognition events for competition winners, point leaders, and outstanding contributions to the club.</p>
+              <div class="event-frequency">End of Year</div>
+            </div>
+
+            <div class="event-type-card">
+              <div class="event-icon">👥</div>
+              <h3>Officer Meetings</h3>
+              <p>Planning sessions and leadership meetings to organize upcoming events and club activities.</p>
+              <div class="event-frequency">Bi-weekly</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Important Dates -->
+      <section class="important-dates-section triangles">
+        <div class="important-dates-content">
+          <h2>Key Dates to Remember</h2>
+          <div class="dates-grid">
+            <div class="date-card">
+              <div class="date-month">SEP</div>
+              <div class="date-details">
+                <h4>Club Rush & Sign-ups</h4>
+                <p>Join MAO at the beginning of the school year during club recruitment week.</p>
+              </div>
+            </div>
+
+            <div class="date-card">
+              <div class="date-month">OCT</div>
+              <div class="date-details">
+                <h4>AMC 10/12 Registration</h4>
+                <p>Sign up for the American Mathematics Competitions - our biggest event!</p>
+              </div>
+            </div>
+
+            <div class="date-card">
+              <div class="date-month">NOV</div>
+              <div class="date-details">
+                <h4>AMC 10/12 Competition</h4>
+                <p>The premier high school mathematics competition in the United States.</p>
+              </div>
+            </div>
+
+            <div class="date-card">
+              <div class="date-month">MAR</div>
+              <div class="date-details">
+                <h4>Pi Day Celebration</h4>
+                <p>Annual celebration with pie, games, and mathematical festivities on 3/14!</p>
+              </div>
+            </div>
+
+            <div class="date-card">
+              <div class="date-month">MAY</div>
+              <div class="date-details">
+                <h4>End of Year Banquet</h4>
+                <p>Awards ceremony and celebratory feasting for all members and their achievements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stay Updated -->
+      <section class="stay-updated-section blue-section triangles">
+        <div class="stay-updated-content">
+          <h2>Never Miss an Event</h2>
+          <p>Stay connected with MAO through multiple channels to ensure you're always in the loop!</p>
+          
+          <div class="update-methods">
+            <div class="update-method">
+              <div class="method-icon">💬</div>
+              <h3>Discord Notifications</h3>
+              <p>Get instant updates and reminders about upcoming events in our active Discord community.</p>
+              <a href="https://discord.gg/SYTXCmgen2" class="method-button" target="_blank">Join Discord</a>
+            </div>
+
+            <div class="update-method">
+              <div class="method-icon">📱</div>
+              <h3>Remind Messages</h3>
+              <p>Receive text message reminders about important meetings and competition deadlines.</p>
+              <a href="https://www.remind.com/join/othsmao-29" class="method-button" target="_blank">Join Remind</a>
+            </div>
+
+            <div class="update-method">
+              <div class="method-icon">📸</div>
+              <h3>Instagram Stories</h3>
+              <p>Follow our Instagram for event highlights, behind-the-scenes content, and last-minute updates.</p>
+              <a href="https://www.instagram.com/othsmao/" class="method-button" target="_blank">Follow Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="calendar-cta triangles">
+        <div class="cta-content">
+          <h2>Ready to Join Our Next Event?</h2>
+          <p>Don't wait - become part of our mathematical community today and start attending these amazing events!</p>
+          <div class="cta-buttons">
+            <a href="join.html" class="cta-button primary large">Join MAO Now</a>
+            <a href="features.html" class="cta-button secondary large">Track Your Points</a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -54,16 +226,16 @@
         <div class="footer-section">
           <h4>Contact</h4>
           <div class="social-icons">
-            <a href="othsmao@gmail.com" target="_blank">
-              <img src="assets/Gmail.png" alt="Instagram"/>
+            <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
+              <img src="assets/Gmail.png" alt="Email"/>
             </a>
-            <a href="https://www.instagram.com/othsmao/" target="_blank">
+            <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
               <img src="assets/Instagram.png" alt="Instagram"/>
             </a>
-            <a href="https://www.remind.com/join/othsmao-29" target="_blank">
+            <a href="https://www.remind.com/join/othsmao-29" target="_blank" aria-label="Join our Remind">
               <img src="assets/Remind.png" alt="Remind" />
             </a>
-            <a href="https://discord.gg/SYTXCmgen2" target="_blank">
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
               <img src="assets/Discord.jpg" alt="Discord" />
             </a>
           </div>
@@ -82,7 +254,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 OTHS MAO. All rights reserved.</p>
+        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
       </div>
     </footer>
 

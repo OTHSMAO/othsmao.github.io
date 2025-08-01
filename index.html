@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>OTHS MAO - Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="description" content="Join OTHS Mu Alpha Theta - inspiring mathematical excellence through competitions, community, and academic achievement at Oak Ridge High School.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="assets/MAO_Blue.png" class="logo-img" />
+        <img src="assets/MAO_Blue.png" class="logo-img" alt="MAO Logo" />
         OTHS MAO
       </a>
     
       <div class="nav-buttons desktop-nav">
-        <a href="index.html"><button>Home</button></a>
+        <a href="index.html"><button class="active">Home</button></a>
         <a href="benefits.html"><button>Benefits</button></a>
         <a href="join.html"><button>Join</button></a>
         <a href="calendar.html"><button>Calendar</button></a>
@@ -23,7 +24,7 @@
         <a href="about.html"><button>About</button></a>
       </div>
     
-      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
 
       <div class="mobile-nav" id="mobileMenu">
         <a href="index.html">Home</a>
@@ -36,22 +37,126 @@
     </header>
     
     <main>
-      <section class="blue-section triangles">
-        <div>
-          <h1>What is MAO?</h1>
-          <p>We are dedicated to inspiring a keen interest in mathematics, developing strong scholarship in the subject, and promoting the enjoyment of mathematics in high school and two-year college students. - The MAO Mission Statement</p>
+      <!-- Hero Section -->
+      <section class="hero-section blue-section triangles">
+        <div class="hero-content">
+          <h1>Welcome to OTHS Mu Alpha Theta</h1>
+          <p class="hero-subtitle">Inspiring mathematical excellence and fostering a love for problem-solving in the Tompkins High School community.</p>
+          <div class="hero-buttons">
+            <a href="join.html" class="cta-button primary">Join MAO Today</a>
+            <a href="benefits.html" class="cta-button secondary">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div>This is filler content</div>
-        <div>This is more filler content</div>
-        <div>This is more more filler content</div>
-        <div>This is more more more filler content</div>
-        <div>This is more more more more filler content</div>
-        <div>This is more more more more more filler content</div>
-        <div>This is more more more more more more filler content</div>
-        <div>This is more more more more more more more filler content</div>
+      <!-- Mission Section -->
+      <section class="mission-section triangles">
+        <div class="mission-content">
+          <h2>Our Mission</h2>
+          <blockquote class="mission-quote">
+            "We are dedicated to inspiring a keen interest in mathematics, developing strong scholarship in the subject, and promoting the enjoyment of mathematics in high school and two-year college students."
+          </blockquote>
+          <p class="mission-attribution">— The MAO Mission Statement</p>
+        </div>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="stats-section blue-section triangles">
+        <div class="stats-container">
+          <h2>MAO by the Numbers</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Years Strong</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">65+</div>
+              <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Major Contests</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">7</div>
+              <div class="stat-label">Officer Positions</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Offer -->
+      <section class="offerings-section triangles">
+        <div class="offerings-content">
+          <h2>What We Offer</h2>
+          <div class="offerings-grid">
+            <div class="offering-card">
+              <div class="offering-icon">🏆</div>
+              <h3>Competitions</h3>
+              <p>Participate in AMC, A&M Contest, U of H contest, and our homemade TMC contest to challenge your skills.</p>
+              <a href="benefits.html" class="learn-more">Learn More →</a>
+            </div>
+            
+            <div class="offering-card">
+              <div class="offering-icon">🎓</div>
+              <h3>Academic Support</h3>
+              <p>Get help with your math studies and prepare for competitions with our tutoring sessions.</p>
+              <a href="benefits.html" class="learn-more">Learn More →</a>
+            </div>
+            
+            <div class="offering-card">
+              <div class="offering-icon">👥</div>
+              <h3>Community</h3>
+              <p>Join a motivated community of math enthusiasts and make lasting friendships.</p>
+              <a href="join.html" class="learn-more">Join Us →</a>
+            </div>
+            
+            <div class="offering-card">
+              <div class="offering-icon">🎉</div>
+              <h3>Fun Events</h3>
+              <p>Enjoy math games, Pi Day parties, and team challenges with free food and prizes!</p>
+              <a href="calendar.html" class="learn-more">See Events →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section blue-section triangles">
+        <div class="cta-content">
+          <h2>Ready to Join Our Math Community?</h2>
+          <p>Whether you're looking to improve your math skills, compete at a high level, or just have fun with like-minded peers, MAO has something for you!</p>
+          <div class="cta-buttons">
+            <a href="join.html" class="cta-button primary large">Join MAO Now</a>
+            <a href="about.html" class="cta-button secondary large">Meet Our Officers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Links -->
+      <section class="quick-links-section triangles">
+        <div class="quick-links-content">
+          <h2>Quick Access</h2>
+          <div class="quick-links-grid">
+            <a href="calendar.html" class="quick-link-card">
+              <div class="quick-link-icon">📅</div>
+              <h4>Upcoming Events</h4>
+              <p>Check out our calendar for meetings and competitions</p>
+            </a>
+            
+            <a href="features.html" class="quick-link-card">
+              <div class="quick-link-icon">📊</div>
+              <h4>Point Card</h4>
+              <p>Track your progress and see leaderboards</p>
+            </a>
+            
+            <a href="https://discord.gg/SYTXCmgen2" class="quick-link-card" target="_blank">
+              <div class="quick-link-icon">💬</div>
+              <h4>Discord Server</h4>
+              <p>Join our active community discussions</p>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -60,16 +165,16 @@
         <div class="footer-section">
           <h4>Contact</h4>
           <div class="social-icons">
-            <a href="othsmao@gmail.com" target="_blank">
-              <img src="assets/Gmail.png" alt="Instagram"/>
+            <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
+              <img src="assets/Gmail.png" alt="Email"/>
             </a>
-            <a href="https://www.instagram.com/othsmao/" target="_blank">
+            <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
               <img src="assets/Instagram.png" alt="Instagram"/>
             </a>
-            <a href="https://www.remind.com/join/othsmao-29" target="_blank">
+            <a href="https://www.remind.com/join/othsmao-29" target="_blank" aria-label="Join our Remind">
               <img src="assets/Remind.png" alt="Remind" />
             </a>
-            <a href="https://discord.gg/SYTXCmgen2" target="_blank">
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
               <img src="assets/Discord.jpg" alt="Discord" />
             </a>
           </div>
@@ -88,7 +193,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 OTHS MAO. All rights reserved.</p>
+        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
       </div>
     </footer>
     
