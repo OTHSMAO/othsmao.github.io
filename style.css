@@ -464,7 +464,6 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    max-width: 1000px;
 }
 
 .competition-item {
@@ -2478,6 +2477,14 @@ p {
     font-weight: 700;
     margin: 0 0 0.75rem 0;
     color: #303030;
+    text-align: center;
+}
+
+.resource-info h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: #21ac9c;
     text-align: center;
 }
 
