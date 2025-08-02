@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OTHS MAO - Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/MAO_Blue.png" class="logo-img" alt="MAO Logo" />
+        OTHS MAO
+      </a>
+    
+      <div class="nav-buttons desktop-nav">
+        <a href="index.html"><button>Home</button></a>
+        <a href="benefits.html"><button>Benefits</button></a>
+        <a href="join.html"><button>Join</button></a>
+        <a href="calendar.html"><button>Calendar</button></a>
+        <div class="dropdown">
+          <button class="active">Features ▼</button>
+          <div class="dropdown-content">
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
+          </div>
+        </div>
+        <a href="about.html"><button>About</button></a>
+      </div>
+    
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
+
+      <div class="mobile-nav" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="join.html">Join</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="pointcard.html">Point Card</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
+
+    <!--Point Card Loader-->
+    <main>
+      <section class="blue-section features-section triangles">
+        <div>
+          <h4>Point Card System</h4>
+          <p>Track your progress and compete with fellow members!</p>
+          
+          <div class="iframe-container">
+            <iframe 
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLi36CzI-UY0DeQx9wOXi30_DNEC66tdrFCAc5L8Wys6ajFSmj0GTPaHJaDe1XWJsrtyp-8yVgIEjI/pubhtml?widget=true&amp;headers=false"
+              title="MAO Point Card Spreadsheet"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section> 
+
+      <!--Point System-->
+      <section class="triangles">
+        <div>
+          <h4>How the Point System Works</h4>
+          <div class="info-grid">
+            <div class="feature-card">
+              <div class="feature-icon">📚</div>
+              <h5>Attend Events</h5>
+              <p>Earn points by participating in MAO meetings, workshops, and special events throughout the year.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🧩</div>
+              <h5>Complete Activities</h5>
+              <p>Participate in math challenges, team competitions, and collaborative problem-solving sessions.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h5>Problem of the Week</h5>
+              <p>Solve our weekly math problems to sharpen your skills and earn consistent points.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🏆</div>
+              <h5>MAO Society</h5>
+              <p>Accumulate enough points to qualify for the prestigious MAO Society recognition!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Prize Info-->
+      <section class="blue-section triangles">
+        <div>
+          <h4>Competition & Rewards</h4>
+          <p>We foster a friendly competitive environment with exciting prizes for top performers!</p>
+          <div class="competition-info">
+            <div class="competition-item">
+              <h5>🥇 Top Point Earners</h5>
+              <p>Recognition and special prizes for the most active members</p>
+            </div>
+            <div class="competition-item">
+              <h5>📢 Need Help?</h5>
+              <p>Found incorrect information? Let us know on Discord or Remind!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <div class="social-icons">
+            <a href="mailto:othsmao@gmail.com" target="_blank">
+              <img src="assets/Gmail.png" alt="Email"/>
+            </a>
+            <a href="https://www.instagram.com/othsmao/" target="_blank">
+              <img src="assets/Instagram.png" alt="Instagram"/>
+            </a>
+            <a href="https://www.remind.com/join/othsmao-29" target="_blank">
+              <img src="assets/Remind.png" alt="Remind" />
+            </a>
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank">
+              <img src="assets/Discord.jpg" alt="Discord" />
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <div class="quick-link-grid">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="join.html">Join</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OTHS MAO - Resources</title>
+    <meta name="description" content="Essential math resources for OTHS Mu Alpha Theta members - from competition prep to learning tools and practice materials.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/MAO_Blue.png" class="logo-img" alt="MAO Logo" />
+        OTHS MAO
+      </a>
+    
+      <div class="nav-buttons desktop-nav">
+        <a href="index.html"><button>Home</button></a>
+        <a href="benefits.html"><button>Benefits</button></a>
+        <a href="join.html"><button>Join</button></a>
+        <a href="calendar.html"><button>Calendar</button></a>
+        <div class="dropdown">
+          <button class="active">Features ▼</button>
+          <div class="dropdown-content">
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
+          </div>
+        </div>
+        <a href="about.html"><button>About</button></a>
+      </div>
+    
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
+
+      <div class="mobile-nav" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="join.html">Join</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="pointcard.html">Point Card</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="resources-hero blue-section triangles">
+        <div class="hero-content">
+          <h1>Math Resources</h1>
+          <p class="hero-subtitle">Essential tools and websites to enhance your mathematical journey</p>
+          <div class="resource-categories">
+            <div class="category-badge">📚 Learning Platforms</div>
+            <div class="category-badge">🏆 Competition Prep</div>
+            <div class="category-badge">📖 Reference Materials</div>
+            <div class="category-badge">🧮 Practice Tools</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources Grid Section -->
+      <section class="resources-main-section triangles">
+        <div class="resources-container">
+          <h2>Recommended Resources</h2>
+          <p class="resources-intro">Click on any logo or title to visit the resource. These are tools our members love and use regularly!</p>
+          
+          <div class="resources-grid">
+            <!-- Learning Platforms Category -->
+            <div class="resource-category">
+              <h3 class="category-title">
+                <span class="category-icon">📚</span>
+                Learning Platforms
+              </h3>
+              <div class="resource-cards">
+
+                <div class="resource-card">
+                  <a href="https://artofproblemsolving.com" target="_blank" class="resource-link">
+                    <div class="resource-logo">
+                      <img src="assets/contest-prep/aops-logo.png" alt="Art of Problem Solving" />
+                    </div>
+                    <div class="resource-info">
+                      <h4>Art of Problem Solving</h4>
+                      <p>Premier online platform for math competition training and advanced mathematics courses.</p>
+                      <div class="resource-tags">
+                        <span class="tag">Competition Prep</span>
+                        <span class="tag">Books</span>
+                        <span class="tag">Forums</span>
+                        <span class="tag">Mock Contests</span>
+                        <span class="tag">OTHS MAO Sponsor</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Add more here -->
+                
+              </div>
+            </div>
+
+            <!-- Reference Materials Category -->
+            <div class="resource-category">
+              <h3 class="category-title">
+                <span class="category-icon">📖</span>
+                Reference Materials
+              </h3>
+              <div class="resource-cards">
+                
+                <div class="resource-card">
+                    <a href="" target="_blank" class="resource-link">
+                      <div class="resource-info">
+                        <h4>Coming Soon!</h4>
+                      </div>
+                    </a>
+                </div>
+
+                <!-- Add more here -->
+                
+              </div>
+            </div>
+
+            <!-- Practice Tools Category -->
+            <div class="resource-category">
+              <h3 class="category-title">
+                <span class="category-icon">🧮</span>
+                Practice Tools
+              </h3>
+              <div class="resource-cards">
+                
+                <div class="resource-card">
+                    <a href="https://mathdash.com" target="_blank" class="resource-link">
+                      <div class="resource-logo">
+                        <img src="assets/contest-prep/mathdash-logo.png" alt="Art of Problem Solving" />
+                      </div>
+                      <div class="resource-info">
+                        <h4>MathDash</h4>
+                        <p>Online practice platform geared towards applying knowledge with tailored problem sets.</p>
+                        <div class="resource-tags">
+                          <span class="tag">Competition Prep</span>
+                          <span class="tag">Original Problems</span>
+                          <span class="tag">Mock Contests</span>
+                          <span class="tag">Free</span>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+
+                <!-- Add more here -->
+                
+              </div>
+            </div>
+
+            <!-- Competitions Category -->
+            <div class="resource-category">
+                <h3 class="category-title">
+                  <span class="category-icon">🏆</span>
+                  Competitions
+                </h3>
+                <div class="resource-cards">
+
+                    <div class="resource-card">
+                        <a href="https://maa.org/student-programs/amc/" target="_blank" class="resource-link">
+                          <div class="resource-logo">
+                            <img src="assets/contest-prep/amc-logo.png" alt="Art of Problem Solving" />
+                          </div>
+                          <div class="resource-info">
+                            <h4>AMC 10/12</h4>
+                            <p>The most prestigious annual (November) math contest which can qualify you for AIME, USAMO, and more!</p>
+                            <div class="resource-tags">
+                                <span class="tag">Competition</span>
+                                <span class="tag">Comp. Algebra</span>
+                                <span class="tag">Comp. Geometry</span>
+                                <span class="tag">Comp. Discrete</span>
+                                <span class="tag">Comp. Number Theory</span>
+                                <span class="tag">OTHS</span>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <a href="https://artsci.tamu.edu/mathematics/forms/highschoolcontest/index.html" target="_blank" class="resource-link">
+                          <div class="resource-logo">
+                            <img src="assets/contest-prep/a&m-logo.png" alt="Art of Problem Solving" />
+                          </div>
+                          <div class="resource-info">
+                            <h4>TAMU</h4>
+                            <p>Annual math contest directed towards local high-schoolers, similar to AMC. Site is currently down.</p>
+                            <div class="resource-tags">
+                                <span class="tag">Competition</span>
+                                <span class="tag">Comp. Algebra</span>
+                                <span class="tag">Comp. Geometry</span>
+                                <span class="tag">Comp. Discrete</span>
+                                <span class="tag">Comp. Calculus</span>
+                                <span class="tag">Minigames</span>
+                                <span class="tag">Local</span>
+                                <span class="tag">Prizes</span>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <a href="https://mathcontest.uh.edu/" target="_blank" class="resource-link">
+                          <div class="resource-logo">
+                            <img src="assets/contest-prep/uh-logo.png" alt="Art of Problem Solving" />
+                          </div>
+                          <div class="resource-info">
+                            <h4>U of H</h4>
+                            <p>Annual (February) online math contest hosted at the University of Houston to test speed and accuracy.</p>
+                            <div class="resource-tags">
+                                <span class="tag">Competition</span>
+                                <span class="tag">Algebra I</span>
+                                <span class="tag">Geometry</span>
+                                <span class="tag">Algebra II</span>
+                                <span class="tag">Precalculus</span>
+                                <span class="tag">Calculus</span>
+                                <span class="tag">Statistics</span>
+                                <span class="tag">Physics</span>
+                                <span class="tag">Minigames</span>
+                                <span class="tag">Online</span>
+                                <span class="tag">Prizes</span>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+  
+                  <!-- Add more here -->
+                  
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Submit Resource Section -->
+      <section class="blue-section submit-resource-section triangles">
+        <div class="submit-content">
+          <h2>Know a Great Resource?</h2>
+          <p>Help your fellow MAO members by suggesting resources you've found helpful!</p>
+          <div class="submit-buttons">
+            <a href="mailto:othsmao@gmail.com?subject=Resource Suggestion" class="submit-button">Suggest a Resource</a>
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank" class="submit-button secondary">Discuss on Discord</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <div class="social-icons">
+            <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
+              <img src="assets/Gmail.png" alt="Email"/>
+            </a>
+            <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
+              <img src="assets/Instagram.png" alt="Instagram"/>
+            </a>
+            <a href="https://www.remind.com/join/othsmao-29" target="_blank" aria-label="Join our Remind">
+              <img src="assets/Remind.png" alt="Remind" />
+            </a>
+            <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
+              <img src="assets/Discord.jpg" alt="Discord" />
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <div class="quick-link-grid">
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="join.html">Join</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

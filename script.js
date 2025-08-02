@@ -1,14 +1,12 @@
 const corners = ['top', 'bottom', 'left', 'right'];
 
+// Toggles between the mobile and desktop headers
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
   menu.classList.toggle("show");
 }
 
-function getRandomCorner() {
-  return corners[Math.floor(Math.random() * corners.length)];
-}
-
+// Creates triangles for each section
 function generateRandomTriangles() {
   document.querySelectorAll('.triangles').forEach(section => {
     const numTriangles = Math.floor(section.offsetHeight / 200) + 2;

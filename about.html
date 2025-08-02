@@ -19,34 +19,43 @@
         <a href="benefits.html"><button>Benefits</button></a>
         <a href="join.html"><button>Join</button></a>
         <a href="calendar.html"><button>Calendar</button></a>
-        <a href="features.html"><button>Features</button></a>
+        <div class="dropdown">
+          <button>Features ▼</button>
+          <div class="dropdown-content">
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
+          </div>
+        </div>
         <a href="about.html"><button class="active">About</button></a>
       </div>
     
-      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
 
       <div class="mobile-nav" id="mobileMenu">
         <a href="index.html">Home</a>
         <a href="benefits.html">Benefits</a>
         <a href="join.html">Join</a>
         <a href="calendar.html">Calendar</a>
-        <a href="features.html">Features</a>
+        <a href="pointcard.html">Point Card</a>
+        <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
       </div>
     </header>
 
     <main>
+      <!--Officer Introduction-->
       <section class="blue-section triangles about-section-enhanced about-page-section">
         <div>
           <h4>Meet Our Officers</h4>
           <p class="officers-intro">Our dedicated leadership team brings passion, expertise, and enthusiasm to everything we do at OTHS MAO.</p>
           <div class="info-grid officers-grid">
+            <!--at some point im gonna have to merge person-card and officer-card css-->
             <div class="person-card officer-card">
               <img src="assets/officers/Anushka-Polapally.png" alt="Anushka Polapally" />
               <div class="officer-info">
                 <h4>Anushka Polapally</h4>
                 <p class="officer-position">President</p>
-                <p class="officer-bio">Hi everyone I am Anushka, and I'm a Co-President of Mu Alpha Theta this year! My favorite math subject in geometry because I love the simplicity and beauty in the subject. I am passionate about making math more exciting and accessible within our community. </p>
+                <p class="officer-bio">Hey~! I'm Anushka, the President of Mu Alpha Theta this year! I loved my Geometry class and doing it competitively! I also enjoy trying new foods!</p>
               </div>
             </div>
 
@@ -55,7 +64,7 @@
               <div class="officer-info">
                 <h4>Guhan Gargya</h4>
                 <p class="officer-position">President</p>
-                <p class="officer-bio">Hey y'all! I'm Guhan, and I'm one of the Co-Presidents for Mu Alpha Theta for this year! My favorite math subject is Linear Algebra, and I love to clean and organize my things in my free time, because I find it calming, but fun to do!<p>
+                <p class="officer-bio">Hey y'all! I'm Guhan, and I'm the President of Mu Alpha Theta for this year! My favorite math subject is Linear Algebra, and I love to clean and organize my things in my free time, because I find it calming, but fun to do!</p>
               </div>
             </div>
 
@@ -107,18 +116,17 @@
         </div>
       </section>
       
+      <!--Contact Page-->
       <section class="triangles about-page-section contact-section-enhanced">
         <div>
           <h4>Get in Touch</h4>
           <p class="contact-intro">Ready to join our mathematical community? We'd love to hear from you! Check out the "Join" page for detailed information on how to become a member.</p>
           <div class="info-grid contact-grid">
             <div class="contact-card enhanced-contact-card">
-              <div class="contact-icon-wrapper">
                 <h4>Email</h4>
                 <a href="mailto:othsmao@gmail.com" class="contact-link">
                   <img src="assets/Teal Email.png" alt="Email" />
                 </a>
-              </div>
               <div class="contact-details">
                 <p class="contact-address">othsmao@gmail.com</p>
                 <p class="contact-description">Send us your questions, suggestions, or just say hello! We respond to all emails promptly.</p>
@@ -126,12 +134,10 @@
             </div>
       
             <div class="contact-card enhanced-contact-card">
-              <div class="contact-icon-wrapper">
                 <h4>Instagram</h4>
                 <a href="https://www.instagram.com/othsmao/" target="_blank" class="contact-link">
                   <img src="assets/Teal Instagram.png" alt="Instagram" />
                 </a>
-              </div>
               <div class="contact-details">
                 <p class="contact-address">@othsmao</p>
                 <p class="contact-description">Follow us for daily math content, event highlights, and behind-the-scenes moments from our community!</p>
@@ -174,7 +180,8 @@
             <a href="benefits.html">Benefits</a>
             <a href="join.html">Join</a>
             <a href="calendar.html">Calendar</a>
-            <a href="features.html">Features</a>
+            <a href="pointcard.html">Point Card</a>
+            <a href="resources.html">Resources</a>
             <a href="about.html">About</a>
           </div>
         </div>
