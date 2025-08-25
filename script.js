@@ -55,15 +55,15 @@ window.addEventListener('DOMContentLoaded', generateRandomTriangles);
 
 // Configuration - Update these coordinates for your meeting location
 const MEETING_LOCATION = {
-    lat: 29.73333,
-    lng: -95.81355,
+    lat: 29.7333,
+    lng: -95.8136,
     name: "Tompkins High School"
 };
 
-const RADIUS_METERS = 100; // meter radius
+const RADIUS_METERS = 200; // meter radius
 
 // Google Sheets Web App URL - Replace with your actual URL
-const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxa-x1-g8PulLfYsmpJIUzdcGVVx7uwcr0Ef4GK3wZOxDXNpzfw-agPfSoEoSW9RDPJLA/exec';
 
 let userLocation = null;
 let locationVerified = false;
