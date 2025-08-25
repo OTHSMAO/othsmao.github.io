@@ -6,6 +6,7 @@
     <title>OTHS MAO - Calendar</title>
     <meta name="description" content="Stay up-to-date with OTHS Mu Alpha Theta events, meetings, competitions, and activities. Never miss a math opportunity!">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,15 +20,16 @@
         <a href="index.html"><button>Home</button></a>
         <a href="benefits.html"><button>Benefits</button></a>
         <a href="join.html"><button>Join</button></a>
-        <a href="calendar.html"><button class="active">Calendar</button></a>
         <div class="dropdown">
-          <button>Features ▼</button>
+          <button class="active">Features ▼</button>
           <div class="dropdown-content">
+            <a href="calendar.html">Calendar</a>
             <a href="pointcard.html">Point Card</a>
             <a href="resources.html">Resources</a>
           </div>
         </div>
         <a href="about.html"><button>About</button></a>
+        <a href="signin.html"><button>Sign In</button></a>
       </div>
     
       <div class="mobile-menu-icon" onclick="toggleMenu()" aria-label="Toggle mobile menu">☰</div>
@@ -40,6 +42,7 @@
         <a href="pointcard.html">Point Card</a>
         <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
+        <a href="signin.html">Sign In</a>
       </div>
     </header>
 
@@ -50,10 +53,10 @@
           <h1>MAO Event Calendar</h1>
           <p class="hero-subtitle">Stay connected with all our meetings, competitions, and fun activities throughout the year!</p>
           <div class="calendar-features">
-            <div class="feature-badge">Weekly Meetings</div>
-            <div class="feature-badge">Competitions</div>
-            <div class="feature-badge">Special Events</div>
-            <div class="feature-badge">Study Sessions</div>
+            <div class="feature-badge"><i class="fa-solid fa-calendar"></i> Weekly Meetings</div>
+            <div class="feature-badge"><i class="fa-solid fa-trophy"></i> Competitions</div>
+            <div class="feature-badge"><i class="fa-solid fa-gift"></i> Special Events</div>
+            <div class="feature-badge"><i class="fa-solid fa-book"></i> Study Sessions</div>
           </div>
         </div>
       </section>
@@ -88,31 +91,31 @@
           
           <div class="event-types-grid">
             <div class="event-type-card">
-              <h3>Regular Meetings</h3>
+              <h3><i class="fa-solid fa-calendar-check"></i> Regular Meetings</h3>
               <p>Weekly gatherings for lessons, problem-solving sessions, and club announcements. Perfect for staying connected with the community.</p>
               <div class="event-frequency">Monthly</div>
             </div>
 
             <div class="event-type-card">
-              <h3>Math Competitions</h3>
+              <h3><i class="fa-solid fa-trophy"></i> Math Competitions</h3>
               <p>AMC, A&M Contest, U of H contest, and our signature TMC contest. Test your skills against other mathematical minds!</p>
               <div class="event-frequency">Seasonal</div>
             </div>
 
             <div class="event-type-card">
-              <h3>Study Sessions</h3>
+              <h3><i class="fa-solid fa-book"></i> Study Sessions</h3>
               <p>Focused preparation for competitions, help with coursework, and collaborative problem-solving workshops.</p>
               <div class="event-frequency">Weekly</div>
             </div>
 
             <div class="event-type-card">
-              <h3>Special Events</h3>
+              <h3><i class="fa-solid fa-gift"></i> Special Events</h3>
               <p>Pi Day celebrations, math games, team challenges, and end-of-year parties. Learning can be fun!</p>
               <div class="event-frequency">Seasonal</div>
             </div>
 
             <div class="event-type-card">
-              <h3>Awards Ceremonies</h3>
+              <h3><i class="fa-solid fa-medal"></i> Awards Ceremonies</h3>
               <p>Recognition events for competition winners, point leaders, and outstanding contributions to the club.</p>
               <div class="event-frequency">End of Year</div>
             </div>
@@ -126,9 +129,9 @@
           <h2>Key Dates to Remember</h2>
           <div class="dates-grid">
             <div class="date-card">
-              <div class="date-month">SEP</div>
+              <div class="date-month">AUG</div>
               <div class="date-details">
-                <h4>Club Rush & Sign-ups</h4>
+                <h4><i class="fa-solid fa-check"></i> Club Rush & Sign-ups</h4>
                 <p>Join MAO at the beginning of the school year during club recruitment week.</p>
               </div>
             </div>
@@ -136,7 +139,7 @@
             <div class="date-card">
               <div class="date-month">OCT</div>
               <div class="date-details">
-                <h4>AMC 10/12 Registration</h4>
+                <h4><i class="fa-solid fa-signature"></i> AMC 10/12 Registration</h4>
                 <p>Sign up for the American Mathematics Competitions - our biggest event!</p>
               </div>
             </div>
@@ -144,7 +147,7 @@
             <div class="date-card">
               <div class="date-month">NOV</div>
               <div class="date-details">
-                <h4>AMC 10/12 Competition</h4>
+                <h4><i class="fa-solid fa-divide"></i> AMC 10/12 Competition</h4>
                 <p>The premier high school mathematics competition in the United States.</p>
               </div>
             </div>
@@ -152,7 +155,7 @@
             <div class="date-card">
               <div class="date-month">MAR</div>
               <div class="date-details">
-                <h4>Pi Day Celebration</h4>
+                <h4><i class="fa-solid fa-cake-candles"></i> Pi Day Celebration</h4>
                 <p>Annual celebration with pie, games, and mathematical festivities on 3/14!</p>
               </div>
             </div>
@@ -160,7 +163,7 @@
             <div class="date-card">
               <div class="date-month">MAY</div>
               <div class="date-details">
-                <h4>End of Year Banquet</h4>
+                <h4><i class="fa-solid fa-champagne-glasses"></i> End of Year Banquet</h4>
                 <p>Awards ceremony and celebratory feasting for all members and their achievements.</p>
               </div>
             </div>
@@ -196,42 +199,43 @@
         </div>
       </section>
 
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <div class="social-icons">
-            <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
-              <img src="assets/Gmail.png" alt="Email"/>
-            </a>
-            <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
-              <img src="assets/Instagram.png" alt="Instagram"/>
-            </a>
-            <a href="https://www.remind.com/join/othsmao" target="_blank" aria-label="Join our Remind">
-              <img src="assets/Remind.png" alt="Remind" />
-            </a>
-            <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
-              <img src="assets/Discord.jpg" alt="Discord" />
-            </a>
-          </div>
-        </div>
+      <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <div class="social-icons">
+                    <a href="mailto:othsmao@gmail.com" target="_blank" aria-label="Email us">
+                        <img src="assets/Gmail.png" alt="Email"/>
+                    </a>
+                    <a href="https://www.instagram.com/othsmao/" target="_blank" aria-label="Follow us on Instagram">
+                        <img src="assets/Instagram.png" alt="Instagram"/>
+                    </a>
+                    <a href="https://www.remind.com/join/othsmao" target="_blank" aria-label="Join our Remind">
+                        <img src="assets/Remind.png" alt="Remind" />
+                    </a>
+                    <a href="https://discord.gg/SYTXCmgen2" target="_blank" aria-label="Join our Discord">
+                        <img src="assets/Discord.jpg" alt="Discord" />
+                    </a>
+                </div>
+            </div>
     
-        <div class="footer-section quick-links">
-          <h4>Quick Links</h4>
-          <div class="quick-link-grid">
-            <a href="index.html">Home</a>
-            <a href="benefits.html">Benefits</a>
-            <a href="join.html">Join</a>
-            <a href="calendar.html">Calendar</a>
-            <a href="pointcard.html">Point Card</a>
-            <a href="resources.html">Resources</a>
-            <a href="about.html">About</a>
-          </div>
+            <div class="footer-section quick-links">
+                <h4>Quick Links</h4>
+                <div class="quick-link-grid">
+                    <a href="index.html">Home</a>
+                    <a href="benefits.html">Benefits</a>
+                    <a href="join.html">Join</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="pointcard.html">Point Card</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="about.html">About</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
-      </div>
+        <div class="footer-bottom">
+            <p>&copy; 2013-Present. OTHS MAO. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
